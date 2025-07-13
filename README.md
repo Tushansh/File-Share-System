@@ -65,29 +65,30 @@ file_share_system/
 
 ### 1. Clone the Repository
 
-```git clone https://github.com/yourusername/file_share_system.git
+```
+git clone https://github.com/yourusername/file_share_system.git
 cd file_share_system
 ```
 ### 2. Install Dependencies
-
-- python -m venv venv
-- source venv/bin/activate
-- pip install -r requirements.txt
-
+```
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
 ### 3. Configure .env
-
-- DATABASE_URL=postgresql://postgres:yourpassword@localhost/fileshare
-- SECRET_KEY=<your_generated_secret>
-- ALGORITHM=HS256
-- EMAIL_USER=your@mailtrap.email
-- EMAIL_PASSWORD=your_mailtrap_password
-- EMAIL_HOST=smtp.mailtrap.io
-- EMAIL_PORT=587
-
+```
+DATABASE_URL=postgresql://postgres:yourpassword@localhost/fileshare
+SECRET_KEY=<your_generated_secret>
+ALGORITHM=HS256
+EMAIL_USER=your@mailtrap.email
+EMAIL_PASSWORD=your_mailtrap_password
+EMAIL_HOST=smtp.mailtrap.io
+EMAIL_PORT=587
+```
 ### 4. Run the App
-
-- uvicorn app.main:app --reload
-
+```
+uvicorn app.main:app --reload
+```
 ## 🔍 API Endpoints
 # 🧑‍💼 Auth
 - POST /auth/signup
@@ -103,10 +104,10 @@ cd file_share_system
 - GET /client/download/{encrypted_id}
 
 ## 📦 Deployment (Optional Docker)
-
-- docker build -t secure-fileshare .
-- docker run -p 8000:8000 secure-fileshare
-
+```
+docker build -t secure-fileshare .
+docker run -p 8000:8000 secure-fileshare
+```
 ## 🙌 Author
 - Built by Tushansh Bajaj.
 - Contact me at [tbb@gmail.com] for questions or improvements!
