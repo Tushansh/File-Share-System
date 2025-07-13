@@ -65,9 +65,9 @@ file_share_system/
 
 ### 1. Clone the Repository
 
-- git clone https://github.com/yourusername/file_share_system.git
-- cd file_share_system
-
+```git clone https://github.com/yourusername/file_share_system.git
+cd file_share_system
+```
 ### 2. Install Dependencies
 
 - python -m venv venv
